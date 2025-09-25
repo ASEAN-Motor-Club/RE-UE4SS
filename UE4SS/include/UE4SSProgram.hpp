@@ -224,7 +224,7 @@ namespace RC
         auto is_program_started() -> bool;
         auto find_mod_by_id(ModId mod_id) -> Mod*;
         auto find_lua_mod_by_id(ModId mod_id) -> LuaMod*;
-        auto queue_reinstall_mods() -> void;
+        RC_UE4SS_API auto queue_reinstall_mods() -> void;
         auto queue_reinstall_mod(LuaMod* mod) -> void;
         auto queue_reinstall_mod(ModId mod_id) -> void;
         auto queue_uninstall_mod(LuaMod* mod) -> void;
